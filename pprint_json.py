@@ -4,9 +4,9 @@ import sys
 
 def load_data(file_path):
     try:
-        with open(file_path, 'r') as f:
-            return json.load(f)
-    except FileNotFoundError as err:
+        with open(file_path, 'r') as data:
+            return json.load(data)
+    except FileNotFoundError:
         return None
 
 
